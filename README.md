@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 <div align="center">
 
-  <h3><b>Microverse README Template</b></h3>
+  <h3><b>Vet Clinic</b></h3>
 
 </div>
 
@@ -130,6 +130,6 @@ If you like this project please give it a Start ⭐️.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./License) licensed.
+This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
