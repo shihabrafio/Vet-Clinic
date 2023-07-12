@@ -69,9 +69,19 @@ Clone this repository to your desired folder:
   git clone https://github.com/shihabrafio/Vet-Clinic
 ```
 
-- Navigate to the location of the folder in your machine:
+Go to the project directory.
 
-you@your-Pc-name:~$ cd Vet-Clinic
+```bash
+  cd Vet-Clinic
+```
+
+In the project directory, run/ Excute each query in the following order:
+
+```bash
+  Excute schema.sql
+  Excute data.sql
+  Excute queries.sql
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
