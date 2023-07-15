@@ -35,13 +35,17 @@ CREATE TABLE  vets (
 
 CREATE TABLE specializations (
     id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-    vets_id INT FOREIGN KEY REFERENCES vets,
-    species_id INT FOREIGN KEY REFERENCES species
+    vets_id INT ,
+    FOREIGN KEY (vets_id) REFERENCES vets,
+    species_id INT ,
+    FOREIGN KEY (species_id) REFERENCES species
 );
 
 CREATE TABLE visits (
     id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-    animals_id INT FOREIGN KEY REFERENCES animals,
-    vets_id INT FOREIGN KEY REFERENCES vets,
+    animals_id INT ,
+    FOREIGN KEY (animals_id) REFERENCES animals,
+    vets_id INT ,
+    FOREIGN KEY (vets_id) REFERENCES vets,
     date_of_visit DATE
 );
