@@ -94,11 +94,12 @@ SELECT vets.name, COUNT(visits.date_of_visit)
    WHERE vets.name = 'Stephanie Mendez';
    GROUP BY vets.name;
 
-SELECT vets.name, specializations.species_id, specializations.vets_id, species.name
-   FROM specializations FULL OUTER JOIN species
-   ON specializations.id = species.id
-   FULL OUTER JOIN vets
-   ON specializations.vets_id = vets.id;
+SELECT vets.*, species.name
+   FROM vets LEFT JOIN specializations 
+   ON vets.id = specializations.vets_id
+   LEFT JOIN species 
+   ON specializations.species_id = species.id;
+
 
 SELECT vets.name, animals.name , visits.date_of_visit
    FROM animals JOIN visits
@@ -128,13 +129,11 @@ SELECT animals.id, animals.name, animals.date_of_birth,animals.neutered,vets.nam
    ON vets.id = visits.vets_id
    ORDER BY visits.date_of_visit DESC LIMIT 1;
 
-SELECT vets.name, COUNT(visits.date_of_visit)
-   FROM vets JOIN visits
-   ON vets.id = visits.vets_id
-   JOIN specializations
-   ON visits.vets_id = specializations.vets_id
-   WHERE specializations.species_id IS NULL
-   GROUP BY vets.name;
+SELECT count(*)
+   FROM visits
+   LEFT JOIN animals ON animals.id = visits.animals_id
+   LEFT JOIN vets ON vets.id = visits.vets_id
+   WHERE animals.species_id NOT IN (SELECT species_id FROM specializations WHERE vets_id = vets.id);
 
 SELECT vets.name,species.name, COUNT(species.name)
    FROM visits JOIN animals
