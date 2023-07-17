@@ -22,6 +22,8 @@ UPDATE animals SET species = 'pokemon' WHERE species IS NULL;
 COMMIT;
 
 BEGIN;
+
+
 DELETE FROM animals;
 SELECT * FROM animals;
 ROLLBACK;
@@ -160,4 +162,8 @@ EXPLAIN ANALYZE SELECT * FROM owners where email = 'owner_18327@mail.com';
 CREATE INDEX idx_animal_id ON visits (animal_id);
 ANALYZE visits;
 EXPLAIN ANALYZE SELECT COUNT(*) FROM visits where animals_id = 4;
+
+CREATE INDEX idx_vets_id ON visits (vets_id);
+ANALYZE visits;
+EXPLAIN ANALYZE SELECT id,animals_id,date_of_visit FROM visits where vets_id = 2;
 
