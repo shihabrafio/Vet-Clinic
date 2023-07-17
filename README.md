@@ -94,6 +94,12 @@ In the project directory, run/ Excute each query in the following order:
 - Twitter: [@shihab_uddin19](https://twitter.com/shihab_uddin19)
 - LinkedIn: [Shihab Uddin Khan](https://www.linkedin.com/in/shihab-uddin-khan-45620a16a/)
 
+👤 **Kimita Wanjohi**
+
+- GitHub: [@shihabrafio](https://github.com/kimitaWanjohi)
+- Twitter: [@shihab_uddin19](https://twitter.com/myro_dev)
+- LinkedIn: [Shihab Uddin Khan](https://www.linkedin.com/in/kimitawanjohi/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
