@@ -167,3 +167,7 @@ CREATE INDEX idx_vets_id ON visits (vets_id);
 ANALYZE visits;
 EXPLAIN ANALYZE SELECT id,animals_id,date_of_visit FROM visits where vets_id = 2;
 
+CREATE INDEX idx_email ON owners (email);
+ANALYZE visits;
+EXPLAIN ANALYZE SELECT id,full_name FROM owners where email = 'owner_18327@mail.com';
+
