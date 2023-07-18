@@ -30,7 +30,14 @@
 
 **Vet Clinic** is a relational database to create the initial data structure for a vet clinic. A table was created to store animals' information, insert some data into it, and query it.
 
-## 🛠 Built With <a name="built-with"></a>
+## Built With
+
+<ul>
+  <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+</ul>
+
+### Database Schema Diagram
+![image](https://github.com/shihabrafio/Vet-Clinic/assets/67557999/2d0fe2f6-8190-454c-9991-03582da165eb)
 
 ### Tech Stack <a name="tech-stack"></a>
 
