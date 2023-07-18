@@ -37,7 +37,7 @@
 </ul>
 
 ### Database Schema Diagram
-![image](https://github.com/shihabrafio/Vet-Clinic/assets/67557999/2d0fe2f6-8190-454c-9991-03582da165eb)
+![image](https://github.com/shihabrafio/Vet-Clinic/assets/67557999/28793145-3c38-4e4d-9ec5-b2a3a8afc329)
 
 ### Tech Stack <a name="tech-stack"></a>
 
